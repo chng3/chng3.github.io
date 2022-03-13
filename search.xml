@@ -48,50 +48,6 @@
     
     
     <entry>
-      <title>学习乐理～大小调</title>
-      <link href="/2020/10/27/%E5%A4%A7%E8%B0%83%E3%80%81%E5%B0%8F%E8%B0%83/"/>
-      <url>/2020/10/27/%E5%A4%A7%E8%B0%83%E3%80%81%E5%B0%8F%E8%B0%83/</url>
-      
-        <content type="html"><![CDATA[<h2 id="大小调音阶排列组合"><a href="#大小调音阶排列组合" class="headerlink" title="大小调音阶排列组合"></a>大小调音阶排列组合</h2><p>大调：全全半全全全半 12345671</p><p>小调：全半全全半全全 67123456</p><p><strong>Ionian</strong> <strong>Dorian</strong> <strong>Phrygian</strong> <strong>Lydian</strong> <strong>Mixolydian</strong> <strong>Aeolian</strong> <strong>Locrian</strong></p><p>我的霹雳猫阿洛😊</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Music </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 大小调 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Github基础使用</title>
-      <link href="/2018/12/05/Github%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/"/>
-      <url>/2018/12/05/Github%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</url>
-      
-        <content type="html"><![CDATA[<h1 id="Github基础使用"><a href="#Github基础使用" class="headerlink" title="Github基础使用"></a>Github基础使用</h1><h2 id="将本地仓库关联到GitHub"><a href="#将本地仓库关联到GitHub" class="headerlink" title="将本地仓库关联到GitHub"></a>将本地仓库关联到GitHub</h2><h3 id="初始化本地仓库并提交仓库文件"><a href="#初始化本地仓库并提交仓库文件" class="headerlink" title="初始化本地仓库并提交仓库文件"></a>初始化本地仓库并提交仓库文件</h3><p>要先确保操作系统已经安装了<strong>Git</strong>，之后进入本地仓库的根目录，鼠标右键选择<code>Git Bash Here</code>，接着输入以下命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure><p>出现以下回应且在根目录下生成了一个隐藏的文件夹<code>.git</code><br><img src="http://ww1.sinaimg.cn/large/bf4c214dgy1fxw9t5xfwhj20fq01it8l.jpg" alt><br><img src="http://ww1.sinaimg.cn/large/bf4c214dgy1fxw9w20hk0j20gq01umx3.jpg" alt><br>之后，此时仓库里的文件还没有被追踪，输入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add . //将仓库里的所有文件进行追踪</span><br></pre></td></tr></table></figure><p><img src="http://ww1.sinaimg.cn/large/bf4c214dgy1fxw9wvos9rj20e4026gls.jpg" alt><br>执行提交，拍摄快照</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;Started Course&quot;//&quot; &quot;里可以自定义快照的名字</span><br></pre></td></tr></table></figure><p><img src="http://ww1.sinaimg.cn/large/bf4c214dgy1fxw9xsqb8wj20fi05jwf8.jpg" alt></p><h3 id="在GitHub上创建一个项目"><a href="#在GitHub上创建一个项目" class="headerlink" title="在GitHub上创建一个项目"></a>在GitHub上创建一个项目</h3><p>GitHub主页右上角点击new repository<br><img src="http://ww1.sinaimg.cn/large/bf4c214dgy1fxw9y9tnkcj20al06bab3.jpg" alt><br>输入信息，<strong>记住勾选Initialize this repository with a REAdME</strong></p><p><img src="http://img.chng.cf/uPic/ceshi.jpg" alt="ceshi"></p><p>创建后，复制项目的地址</p><p><img src="http://ww1.sinaimg.cn/large/bf4c214dgy1fxw9z9g1caj20sf0eujsx.jpg" alt></p><p>回到本地仓库，使用命令，<strong>并在命令后加上你的GitHub项目的地址</strong>，也就是刚才复制的内容。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin</span><br></pre></td></tr></table></figure><p>这一步是本地和远程服务器建立联系的一步。执行成功后不会显示任何结果：<br><img src="http://ww1.sinaimg.cn/large/bf4c214dgy1fxwa001gerj20fn021q37.jpg" alt></p><p>到这里，你已经成功了一半了。</p><h3 id="向远程仓库提交代码"><a href="#向远程仓库提交代码" class="headerlink" title="向远程仓库提交代码"></a>向远程仓库提交代码</h3><p>第一次向远程提交代码时得先将远程的README.md 文件同步过来，实行一下代码。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull --rebase origin master</span><br></pre></td></tr></table></figure><p><img src="http://ww1.sinaimg.cn/large/bf4c214dgy1fxwa0n36itj20db02xq38.jpg" alt></p><p>查看本地仓库是否出现README.md文件，如有，则表示拉取则成功。</p><p><img src="http://ww1.sinaimg.cn/large/bf4c214dgy1fxwa1awhwuj20gp032glw.jpg" alt></p><p>接着，将进行第一次向远程同步本地仓库的内容，输入：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure><p><img src="http://ww1.sinaimg.cn/large/bf4c214dgy1fxwa1pgcvpj20dj0400t6.jpg" alt><br><strong>注意</strong>：过程中可能会出现一个登陆GitHub帐户的窗口，输入你的账户及密码就可以了。</p><p>最后回到GitHub主页查看是否同步即可。</p><h2 id="文件变动操作"><a href="#文件变动操作" class="headerlink" title="文件变动操作"></a>文件变动操作</h2><h3 id="本地仓库有大量变动-修改II增删-，之后想快速同步到Github远程仓库应该如何处理？"><a href="#本地仓库有大量变动-修改II增删-，之后想快速同步到Github远程仓库应该如何处理？" class="headerlink" title="本地仓库有大量变动(修改II增删)，之后想快速同步到Github远程仓库应该如何处理？"></a>本地仓库有大量变动(修改II增删)，之后想快速同步到Github远程仓库应该如何处理？</h3><p>比如我在本地有一个名为CodingAtSchool的仓库，仓库里有C语言作业文件夹和一个README文件如下图：</p><p><img src="http://ww1.sinaimg.cn/large/bf4c214dgy1fxwa29yeq8j20i705hdgm.jpg" alt><br>我今天用操作鼠标做了大量对C语言目录下的改动，之后进到仓库根目录下，右键Git Bash Here，输入git status，查看仓库状态。</p><p><img src="http://ww1.sinaimg.cn/large/bf4c214dgy1fxwa2m62lwj20ko0d0k3y.jpg" alt><br>oops，大量的红色数字什么鬼，这时千万别慌！如果本地仓库中含文件名为中文名称时，命令窗中提示的信息是无法显示中文的，它会把中文变成一串串数字。这时仔细观察一下，我所做的全部变动都是在C语言作业这个目录下完成的，具体变动是删除了大量文件和增加了一些文件。</p><p>第一步，分别执行以下两句命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git rm -r C语言作业/</span><br><span class="line">$ git add C语言作业/</span><br></pre></td></tr></table></figure><p>再一次查看状态 git status，发现一切的修改都已经提交到暂存区了<br><img src="http://ww1.sinaimg.cn/large/bf4c214dgy1fxwa2vktcrj20kk0cwqfy.jpg" alt></p><p>第二步，提交修改</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m &apos;我的修改&apos;</span><br></pre></td></tr></table></figure><p>第三步，推送到远程仓库</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> git </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hello World</title>
       <link href="/2017/12/22/hello-world/"/>
       <url>/2017/12/22/hello-world/</url>
