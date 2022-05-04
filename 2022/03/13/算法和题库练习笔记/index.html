@@ -25,8 +25,9 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/006DDiezgy1h08n6lcku4j325012y4a8.jpg">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/01.39.29.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/QpdWyA.png">
 <meta property="article:published_time" content="2022-03-13T09:50:04.000Z">
-<meta property="article:modified_time" content="2022-05-02T18:50:51.677Z">
+<meta property="article:modified_time" content="2022-05-04T03:37:29.034Z">
 <meta property="article:author" content="Zhuang">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary_large_image">
@@ -153,6 +154,18 @@
             </li>
           
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/Demo/">
+                <i class="iconfont icon-brush"></i>
+                Demo
+              </a>
+            </li>
+          
+        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
@@ -207,7 +220,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      9 分钟
+      10 分钟
     </span>
   
 
@@ -248,7 +261,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：1 分钟前
+                  本文最后更新于：3 小时前
                 
               </p>
             
@@ -263,10 +276,10 @@
 <p><img src="https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/006DDiezgy1h08n6lcku4j325012y4a8.jpg" srcset="/img/loading.gif" lazyload alt="006DDiezgy1h08n6lcku4j325012y4a8"><br>力扣相关题目：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-search/">力扣算法题目704</a></p>
 <h2 id="回溯法（backtracking）"><a href="#回溯法（backtracking）" class="headerlink" title="回溯法（backtracking）"></a>回溯法（backtracking）</h2><p>待看做笔记： <a target="_blank" rel="noopener" href="https://youtu.be/nrHTtjkYEyQ">使用C++讲解</a><br><img src="https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/01.39.29.png" srcset="/img/loading.gif" lazyload alt="01.39.29"></p>
 <h2 id="双指针（Two-pointer）"><a href="#双指针（Two-pointer）" class="headerlink" title="双指针（Two pointer）"></a>双指针（Two pointer）</h2><p>创建两个指针分别指向数组的首、末位置。</p>
-<figure class="highlight c"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></div></td><td class="code"><pre><code class="hljs C"><span class="hljs-comment">//test.c</span><br><span class="hljs-comment">//利用双指针判断字符的对称问题</span><br><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdbool.h&gt;</span></span><br><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> &#123;<br>	<span class="hljs-comment">//设置一个布尔值 symmetry默认为true</span><br>	<span class="hljs-type">bool</span> symmetry = <span class="hljs-literal">true</span>;<br>	<span class="hljs-type">char</span> str[]= <span class="hljs-string">&quot;ABe1areBA&quot;</span>; <span class="hljs-comment">//很明显,该字符串不是对称的</span><br>	<span class="hljs-comment">//遍历字符串数组</span><br>	<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-built_in">strlen</span>(str) / <span class="hljs-number">2</span>; i++) &#123;<br>		<span class="hljs-comment">//如果对称的两个位置上的数值不相等,则返回false</span><br>		<span class="hljs-keyword">if</span> (str[i] != str[<span class="hljs-built_in">strlen</span>(str)<span class="hljs-number">-1</span>-i]) &#123;<br>			<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%c != %c\n&quot;</span>,str[i],str[<span class="hljs-built_in">strlen</span>(str)<span class="hljs-number">-1</span>-i]);<br>			symmetry = <span class="hljs-literal">false</span>;<br>			<span class="hljs-keyword">break</span>;<br>		&#125;<br>	&#125;<br>	<span class="hljs-keyword">if</span> (symmetry) &#123;<br>		<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s:该字符串为对称的\n&quot;</span>,str);<br>	&#125; <span class="hljs-keyword">else</span> &#123;<br>		<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s:该字符串不是对称的\n&quot;</span>,str);<br>	&#125;<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></div></td><td class="code"><pre><code class="hljs C"><span class="hljs-comment">//test.c</span><br><span class="hljs-comment">//利用双指针判断字符的对称问题</span><br><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdbool.h&gt;</span></span><br><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> &#123;<br>	<span class="hljs-comment">//设置一个布尔值 symmetry默认为true</span><br>	<span class="hljs-type">bool</span> symmetry = <span class="hljs-literal">true</span>;<br>	<span class="hljs-type">char</span> str[]= <span class="hljs-string">&quot;BAeAB&quot;</span>; <span class="hljs-comment">//很明显,该字符串不是对称的</span><br>	<span class="hljs-comment">//遍历字符串数组</span><br>	<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-built_in">strlen</span>(str) / <span class="hljs-number">2</span>; i++) &#123;<br>		<span class="hljs-comment">//如果对称的两个位置上的数值不相等,则返回false</span><br>		<span class="hljs-keyword">if</span> (str[i] != str[<span class="hljs-built_in">strlen</span>(str)<span class="hljs-number">-1</span>-i]) &#123;<br>			<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%c != %c\n&quot;</span>,str[i],str[<span class="hljs-built_in">strlen</span>(str)<span class="hljs-number">-1</span>-i]);<br>			symmetry = <span class="hljs-literal">false</span>;<br>			<span class="hljs-keyword">break</span>;<br>		&#125;<br>	&#125;<br>	<span class="hljs-keyword">if</span> (symmetry) &#123;<br>		<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s:该字符串为对称的\n&quot;</span>,str);<br>	&#125; <span class="hljs-keyword">else</span> &#123;<br>		<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s:该字符串不是对称的\n&quot;</span>,str);<br>	&#125;<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 <p>执行程序:</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">gcc test.c</span> <br><span class="hljs-meta prompt_">$ </span><span class="language-bash">./a.out</span> <br>1 != r<br>ABe1areBA:该字符串不是对称的<br></code></pre></td></tr></table></figure>
-<p>在循环体for中, 当循环第一次时, <code>str[i]</code>和<code>str[strlen(str)-i]</code>分别指向<code>str</code>数组的首位和末位元素。如下图所示:</p>
+<p>在循环体for中, 当循环第一次时, <code>str[i]</code>和<code>str[strlen(str)-1-i]</code>分别指向<code>str</code>数组的首位和末位元素(这里是指结束符“\0”的前一位元素)。如下图所示:<br><img src="https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/QpdWyA.png" srcset="/img/loading.gif" lazyload alt="QpdWyA"></p>
 
             </div>
             <hr>
