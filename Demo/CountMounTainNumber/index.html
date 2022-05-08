@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>回文数延伸题:计算“山”</title>
+
+</style>
+</head>
+
+<body>
+  <main>
+    <p>
+* 题目来自:第十三届蓝桥杯大赛软件赛省赛 Java 大学 B 组<br>
+* ps:这其实是一道出给报考java考生的题目,同样的解题思路java程序跑起来只要1分钟不到的时间就<br>
+* 出来,本人为了学习C语言就决定用C写,C运行出结果需要3分多钟左右甚至更长,不知道什么原因。<br>
+*
+* 题目: <br>
+* 这天小明正在学数数。<br>
+* 试题 B: 山 本题总分:5 分<br>
+* 他突然发现有些正整数的形状像一座“山”，比如 124565421、145541，它 们左右对称(回文)<b>且数位上的数字先单调不减，后单调不增。</b></s><br>
+* 小明数了很久也没有数完，<b>他想让你告诉他在区间 [2022, 2022222022] 中有多少个数的形状像一座“山”。</b><br>
+*【答案提交】<br>
+*  这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一 个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。<br>
+* 答案：3138<br>
+* <b>下面做了一个小的计算组件,为了避免计算时区间范围过大导致浏览器提示崩溃,计算区间限制在了[2022,2022000],主要是为了学习这道题的解题思路比较关键。</b><br>
+
+    </p>
+  </main>
+	<div id = "countarea">
+		<form>
+    <table>
+    	<tr>
+    		<td>计算区间: </td>
+    		
+    		<td>从 <input type="number" name="lNumber" id="lNumberTxt" min="2022" value=2022 onblur="showRange()"/></td>
+    		<td>到 <input type="number"  name="rNumber" id="rNumberTxt" min="2023" value=20220 onblur="showRtRangeTip()" /> </td>
+        <td><span id="rRangeTip"></span></td>
+    		<td><span id = "showleftRange"></span></td>
+    	</tr>
+      <tr>
+        <td><button onclick="goGo()">计算</button></td>
+      </tr>
+    </table>
+</form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
