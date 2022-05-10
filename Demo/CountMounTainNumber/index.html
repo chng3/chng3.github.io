@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div id = "countarea">
+    <div id = "countarea" align="center">
   <main>
     <p>
 * 题目来自:第十三届蓝桥杯大赛软件赛省赛 Java 大学 B 组<br>
@@ -34,13 +34,13 @@
     	<tr>
     		<td>计算区间: </td>
     		
-    		<td>从 <input type="number" name="lNumber" id="lNumberTxt" min="2022" value=2022 onblur="showRange()"/></td>
-    		<td>到 <input type="number"  name="rNumber" id="rNumberTxt" min="2023" value=20220 onblur="showRtRangeTip()" /> </td>
+    		<td>从 <input type="number" name="lNumber" id="lNumberTxt" min=2022 value=2022 onblur="showRange()"/></td>
+    		<td>到 <input type="number"  name="rNumber" id="rNumberTxt"  min=20220 max=2022000 value=20220 onblur="showRtRangeTip()" /> </td>
         <td><span id="rRangeTip"></span></td>
     		<td><span id = "showleftRange"></span></td>
     	</tr>
       <tr>
-        <td><button onclick="goGo()">计算</button></td>
+        <td><input type="submit"  value="计算"></td>
       </tr>
     </table>
 </form>
