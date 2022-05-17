@@ -16,25 +16,21 @@
   <meta name="author" content="Zhuang">
   <meta name="keywords" content="hexo">
   
-    <meta name="description" content="二分查找（binary search） 尽管二分查找的基本思想相对简单，但细节可以令人难以招架 … — 高德纳   当乔恩·本特利将二分搜索问题布置给专业编程课的学生时，百分之90的学生在花费数小时后还是无法给出正确的解答，主要因为这些错误程序在面对边界值的时候无法运行，或返回错误结果。1988年开展的一项研究显示，20本教科书里只有5本正确实现了二分搜索。不仅如此，本特利自己1986年出版的《编">
+    <meta name="description" content="[TOC] 在计算机科学中，树（英语：tree）是一种抽象数据类型（ADT）或是实现这种抽象数据类型的数据结构，用来模拟具有树状结构性质的数据集合。它是由n（n&gt;0）个有限节点组成一个具有层次关系的集合。把它叫做“树”是因为它看起来像一棵倒挂的树，也就是说它是根朝上，而叶朝下的。 树的种类无序树树中任意节点的子节点之间没有顺序关系，这种树称为无序树，也称为自由树。 有序树树中任意节点的子节点">
 <meta property="og:type" content="article">
-<meta property="og:title" content="算法和题库练习笔记">
-<meta property="og:url" content="https://dolphinchng.github.io/2022/03/13/%E7%AE%97%E6%B3%95%E5%92%8C%E9%A2%98%E5%BA%93%E7%BB%83%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:title" content="二叉树(Binary-Tree)">
+<meta property="og:url" content="https://dolphinchng.github.io/2022/05/09/%E4%BA%8C%E5%8F%89%E6%A0%91-Binary-Tree/index.html">
 <meta property="og:site_name" content="Zhuang">
-<meta property="og:description" content="二分查找（binary search） 尽管二分查找的基本思想相对简单，但细节可以令人难以招架 … — 高德纳   当乔恩·本特利将二分搜索问题布置给专业编程课的学生时，百分之90的学生在花费数小时后还是无法给出正确的解答，主要因为这些错误程序在面对边界值的时候无法运行，或返回错误结果。1988年开展的一项研究显示，20本教科书里只有5本正确实现了二分搜索。不仅如此，本特利自己1986年出版的《编">
+<meta property="og:description" content="[TOC] 在计算机科学中，树（英语：tree）是一种抽象数据类型（ADT）或是实现这种抽象数据类型的数据结构，用来模拟具有树状结构性质的数据集合。它是由n（n&gt;0）个有限节点组成一个具有层次关系的集合。把它叫做“树”是因为它看起来像一棵倒挂的树，也就是说它是根朝上，而叶朝下的。 树的种类无序树树中任意节点的子节点之间没有顺序关系，这种树称为无序树，也称为自由树。 有序树树中任意节点的子节点">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/006DDiezgy1h08n6lcku4j325012y4a8.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/01.39.29.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/J49VDc.png">
-<meta property="article:published_time" content="2022-03-13T09:50:04.000Z">
-<meta property="article:modified_time" content="2022-04-04T16:00:00.000Z">
+<meta property="article:published_time" content="2022-05-09T14:47:53.000Z">
+<meta property="article:modified_time" content="2022-05-09T15:43:41.299Z">
 <meta property="article:author" content="Zhuang">
-<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="树">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/006DDiezgy1h08n6lcku4j325012y4a8.jpg">
   
   
-  <title>算法和题库练习笔记 - Zhuang</title>
+  <title>二叉树(Binary-Tree) - Zhuang</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -190,7 +186,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="算法和题库练习笔记">
+            <span class="h2" id="subtitle" title="二叉树(Binary-Tree)">
               
             </span>
 
@@ -200,8 +196,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-03-13 17:50" pubdate>
-        2022年3月13日 下午
+      <time datetime="2022-05-09 22:47" pubdate>
+        2022年5月9日 晚上
       </time>
     </span>
   
@@ -211,7 +207,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.1k 字
+      494 字
     </span>
   
 
@@ -220,7 +216,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      10 分钟
+      5 分钟
     </span>
   
 
@@ -257,29 +253,25 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">算法和题库练习笔记</h1>
+            <h1 style="display: none">二叉树(Binary-Tree)</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：1 个月前
+                  本文最后更新于：8 天前
                 
               </p>
             
             <div class="markdown-body">
-              <h2 id="二分查找（binary-search）"><a href="#二分查找（binary-search）" class="headerlink" title="二分查找（binary search）"></a>二分查找（binary search）</h2><blockquote>
-<p>尽管二分查找的基本思想相对简单，但细节可以令人难以招架 … — 高德纳</p>
-</blockquote>
-<blockquote>
-<p>当乔恩·本特利将二分搜索问题布置给专业编程课的学生时，百分之90的学生在花费数小时后还是无法给出正确的解答，<strong>主要因为这些错误程序在面对边界值的时候无法运行，或返回错误结果。</strong>1988年开展的一项研究显示，20本教科书里只有5本正确实现了二分搜索。不仅如此，本特利自己1986年出版的《编程珠玑》一书中的二分搜索算法<strong>存在整数溢出的问题</strong>，二十多年来无人发现。Java语言的库所实现的二分搜索算法中同样的溢出问题存在了九年多才被修复。 ——摘自维基百科</p>
-</blockquote>
-<p>视频讲解：<a target="_blank" rel="noopener" href="https://youtu.be/CMweVF2iSyQ">二分查找法</a><br>时间复杂度：O(logn)<br>伪代码及方法如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/006DDiezgy1h08n6lcku4j325012y4a8.jpg" srcset="/img/loading.gif" lazyload alt="006DDiezgy1h08n6lcku4j325012y4a8"><br>力扣相关题目：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-search/">力扣算法题目704</a></p>
-<h2 id="回溯法（backtracking）"><a href="#回溯法（backtracking）" class="headerlink" title="回溯法（backtracking）"></a>回溯法（backtracking）</h2><p>待看做笔记： <a target="_blank" rel="noopener" href="https://youtu.be/nrHTtjkYEyQ">使用C++讲解</a><br><img src="https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/01.39.29.png" srcset="/img/loading.gif" lazyload alt="01.39.29"></p>
-<h2 id="双指针（Two-pointer）"><a href="#双指针（Two-pointer）" class="headerlink" title="双指针（Two pointer）"></a>双指针（Two pointer）</h2><p>创建两个指针分别指向数组的首、末位置。</p>
-<figure class="highlight c"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></div></td><td class="code"><pre><code class="hljs C"><span class="hljs-comment">//test.c</span><br><span class="hljs-comment">//利用双指针判断字符的对称问题</span><br><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdbool.h&gt;</span></span><br><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> &#123;<br>	<span class="hljs-comment">//设置一个布尔值 symmetry默认为true</span><br>	<span class="hljs-type">bool</span> symmetry = <span class="hljs-literal">true</span>;<br>	<span class="hljs-type">char</span> str[]= <span class="hljs-string">&quot;BaeAB&quot;</span>; <span class="hljs-comment">//很明显,该字符串不是对称的</span><br>	<span class="hljs-comment">//遍历字符串数组</span><br>	<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-built_in">strlen</span>(str) / <span class="hljs-number">2</span>; i++) &#123;<br>		<span class="hljs-comment">//如果对称的两个位置上的数值不相等,则返回false</span><br>		<span class="hljs-keyword">if</span> (str[i] != str[<span class="hljs-built_in">strlen</span>(str)<span class="hljs-number">-1</span>-i]) &#123;<br>			<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%c != %c\n&quot;</span>,str[i],str[<span class="hljs-built_in">strlen</span>(str)<span class="hljs-number">-1</span>-i]);<br>			symmetry = <span class="hljs-literal">false</span>;<br>			<span class="hljs-keyword">break</span>;<br>		&#125;<br>	&#125;<br>	<span class="hljs-keyword">if</span> (symmetry) &#123;<br>		<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s:该字符串为对称的\n&quot;</span>,str);<br>	&#125; <span class="hljs-keyword">else</span> &#123;<br>		<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s:该字符串不是对称的\n&quot;</span>,str);<br>	&#125;<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p>执行程序:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">gcc test.c</span> <br><span class="hljs-meta prompt_">$ </span><span class="language-bash">./a.out</span> <br>a != A<br>BaeAB:该字符串不是对称的<br></code></pre></td></tr></table></figure>
-<p>在循环体for中, 当循环第一次时, <code>str[i]</code>和<code>str[strlen(str)-1-i]</code>分别指向<code>str</code>数组的首位和末位元素(这里是指结束符“\0”的前一位元素)。如下图所示:<br><img src="https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/J49VDc.png" srcset="/img/loading.gif" lazyload alt="J49VDc"></p>
+              <p>[TOC]</p>
+<p>在计算机科学中，<strong>树</strong>（英语：tree）是一种<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E8%B3%87%E6%96%99%E5%9E%8B%E5%88%A5">抽象数据类型</a>（ADT）或是实现这种抽象数据类型的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B">数据结构</a>，用来模拟具<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%A8%B9%E7%8B%80%E7%B5%90%E6%A7%8B">有树状结构</a>性质的数据集合。它是由n（n&gt;0）个有限节点组成一个具有层次关系的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%9B%86%E5%90%88_(%E6%95%B0%E5%AD%A6)">集合</a>。把它叫做“树”是因为它看起来像一棵倒挂的树，也就是说它是根朝上，而叶朝下的。</p>
+<h1 id="树的种类"><a href="#树的种类" class="headerlink" title="树的种类"></a>树的种类</h1><h2 id="无序树"><a href="#无序树" class="headerlink" title="无序树"></a>无序树</h2><p>树中任意节点的子节点之间没有顺序关系，这种树称为无序树，也称为自由树。</p>
+<h2 id="有序树"><a href="#有序树" class="headerlink" title="有序树"></a>有序树</h2><p>树中任意节点的子节点之间有顺序关系，这种树称为有序树；</p>
+<h3 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h3><p><strong>二叉树</strong>（英语：Binary tree）是每个节点最多只有两个分支（即不存在分支度大于2的节点）的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%A0%91%E7%BB%93%E6%9E%84">树结构</a>。通常分支被称作“左子树”或“右子树”。</p>
+<h4 id="完全二叉树"><a href="#完全二叉树" class="headerlink" title="完全二叉树"></a>完全二叉树</h4><p>对于一棵二叉树，假设其深度为d（d&gt;1）。除了第d层外，其它各层的节点数目均已达最大值，且第d层所有节点从左向右连续地紧密排列，这样的二叉树被称为完全二叉树；</p>
+<h5 id="满二叉树"><a href="#满二叉树" class="headerlink" title="满二叉树"></a>满二叉树</h5><p>所有叶节点都在最底层的完全二叉树；</p>
+<h4 id="平衡二叉树"><a href="#平衡二叉树" class="headerlink" title="平衡二叉树"></a>平衡二叉树</h4><p>当且仅当任何节点的两棵子树的高度差不大于1的二叉树；</p>
+<h4 id="二叉查找树"><a href="#二叉查找树" class="headerlink" title="二叉查找树"></a>二叉查找树</h4><p>英语：(Binary Search Tree)：也称二叉搜索树、有序二叉树；</p>
+<h3 id="霍夫曼树"><a href="#霍夫曼树" class="headerlink" title="霍夫曼树"></a>霍夫曼树</h3><p>带权路径最短的二叉树称为哈夫曼树或最优二叉树；</p>
 
             </div>
             <hr>
@@ -289,10 +281,17 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
+                      <a class="hover-with-bg" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
                     
                   </div>
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%A0%91/">树</a>
+                    
+                  </div>
                 
               </div>
               
@@ -307,18 +306,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/04/08/WinToGo%20-%20%E5%8F%AF%E4%BB%A5%E9%9A%8F%E8%BA%AB%E6%90%BA%E5%B8%A6%E7%9A%84%E7%B3%BB%E7%BB%9FU%E7%9B%98/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">WinToGo - 可以随身携带的系统U盘</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/03/06/Mac%E4%B8%8B%E7%9A%84%E5%B8%B8%E7%94%A8%E7%BB%88%E7%AB%AF%EF%BC%88terminal%EF%BC%89%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/">
-                        <span class="hidden-mobile">Mac下的常用终端（terminal）命令总结</span>
+                      <a href="/2022/04/10/Front-End%20developer%20tech%20interview/">
+                        <span class="hidden-mobile">前端攻城师</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

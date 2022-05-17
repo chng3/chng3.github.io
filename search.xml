@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>二叉树(Binary-Tree)</title>
+      <link href="/2022/05/09/%E4%BA%8C%E5%8F%89%E6%A0%91-Binary-Tree/"/>
+      <url>/2022/05/09/%E4%BA%8C%E5%8F%89%E6%A0%91-Binary-Tree/</url>
+      
+        <content type="html"><![CDATA[<p>[TOC]</p><p>在计算机科学中，<strong>树</strong>（英语：tree）是一种<a href="https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E8%B3%87%E6%96%99%E5%9E%8B%E5%88%A5">抽象数据类型</a>（ADT）或是实现这种抽象数据类型的<a href="https://zh.wikipedia.org/wiki/%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B">数据结构</a>，用来模拟具<a href="https://zh.wikipedia.org/wiki/%E6%A8%B9%E7%8B%80%E7%B5%90%E6%A7%8B">有树状结构</a>性质的数据集合。它是由n（n&gt;0）个有限节点组成一个具有层次关系的<a href="https://zh.wikipedia.org/wiki/%E9%9B%86%E5%90%88_(%E6%95%B0%E5%AD%A6)">集合</a>。把它叫做“树”是因为它看起来像一棵倒挂的树，也就是说它是根朝上，而叶朝下的。</p><h1 id="树的种类"><a href="#树的种类" class="headerlink" title="树的种类"></a>树的种类</h1><h2 id="无序树"><a href="#无序树" class="headerlink" title="无序树"></a>无序树</h2><p>树中任意节点的子节点之间没有顺序关系，这种树称为无序树，也称为自由树。</p><h2 id="有序树"><a href="#有序树" class="headerlink" title="有序树"></a>有序树</h2><p>树中任意节点的子节点之间有顺序关系，这种树称为有序树；</p><h3 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h3><p><strong>二叉树</strong>（英语：Binary tree）是每个节点最多只有两个分支（即不存在分支度大于2的节点）的<a href="https://zh.wikipedia.org/wiki/%E6%A0%91%E7%BB%93%E6%9E%84">树结构</a>。通常分支被称作“左子树”或“右子树”。</p><h4 id="完全二叉树"><a href="#完全二叉树" class="headerlink" title="完全二叉树"></a>完全二叉树</h4><p>对于一棵二叉树，假设其深度为d（d&gt;1）。除了第d层外，其它各层的节点数目均已达最大值，且第d层所有节点从左向右连续地紧密排列，这样的二叉树被称为完全二叉树；</p><h5 id="满二叉树"><a href="#满二叉树" class="headerlink" title="满二叉树"></a>满二叉树</h5><p>所有叶节点都在最底层的完全二叉树；</p><h4 id="平衡二叉树"><a href="#平衡二叉树" class="headerlink" title="平衡二叉树"></a>平衡二叉树</h4><p>当且仅当任何节点的两棵子树的高度差不大于1的二叉树；</p><h4 id="二叉查找树"><a href="#二叉查找树" class="headerlink" title="二叉查找树"></a>二叉查找树</h4><p>英语：(Binary Search Tree)：也称二叉搜索树、有序二叉树；</p><h3 id="霍夫曼树"><a href="#霍夫曼树" class="headerlink" title="霍夫曼树"></a>霍夫曼树</h3><p>带权路径最短的二叉树称为哈夫曼树或最优二叉树；</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据结构 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 树 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>前端攻城师</title>
       <link href="/2022/04/10/Front-End%20developer%20tech%20interview/"/>
       <url>/2022/04/10/Front-End%20developer%20tech%20interview/</url>
