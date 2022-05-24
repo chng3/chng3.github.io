@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Vim操纵速查表</title>
+      <link href="/2022/05/24/Vim%E6%93%8D%E7%BA%B5%E9%80%9F%E6%9F%A5%E8%A1%A8/"/>
+      <url>/2022/05/24/Vim%E6%93%8D%E7%BA%B5%E9%80%9F%E6%9F%A5%E8%A1%A8/</url>
+      
+        <content type="html"><![CDATA[<table><thead><tr><th>快捷键</th><th>功能</th></tr></thead><tbody><tr><td><code>x</code></td><td>删除光标处字符</td></tr><tr><td><code>dd</code></td><td>删除一个词</td></tr><tr><td></td><td></td></tr><tr><td><code>yy</code></td><td>复制当前行至存储缓冲区</td></tr><tr><td><code>[&quot;x]yy</code></td><td>复制当前行至寄存器 x</td></tr><tr><td><code>p</code>（小写）</td><td>在当前行之后粘贴存储缓冲区中的内容</td></tr><tr><td><code>P</code>（大写）</td><td>在当前行之前粘贴存储缓冲区中的内容</td></tr><tr><td></td><td></td></tr><tr><td><code>/search_text</code></td><td>检索文档，在文档后面的部分搜索 search_text</td></tr><tr><td><code>?search_text</code></td><td>检索文档，在文档前面的部分搜索 search_text</td></tr><tr><td><code>n</code></td><td>移动到后一个检索结果</td></tr><tr><td><code>N</code></td><td>移动到前一个检索结果</td></tr><tr><td></td><td></td></tr><tr><td><code>u</code></td><td>撤销最后的操作</td></tr><tr><td><code>Ctrl + r</code></td><td>重做最后撤销的操作</td></tr><tr><td></td><td></td></tr><tr><td><code>dd</code></td><td>删除当前行</td></tr><tr><td><code>d0</code></td><td>删除到行首</td></tr><tr><td><code>d$</code></td><td>删除到行末</td></tr><tr><td></td><td></td></tr><tr><td><code>h</code></td><td>光标向左移动一个字符</td></tr><tr><td><code>j</code> 或 <code>Ctrl + J</code></td><td>光标向下移动一行</td></tr><tr><td><code>k</code> 或 <code>Ctrl + P</code></td><td>光标向上移动一行</td></tr><tr><td><code>l</code></td><td>光标向右移动一个字符</td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr></tbody></table>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Vim </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>二叉树(Binary-Tree)</title>
       <link href="/2022/05/09/%E4%BA%8C%E5%8F%89%E6%A0%91-Binary-Tree/"/>
       <url>/2022/05/09/%E4%BA%8C%E5%8F%89%E6%A0%91-Binary-Tree/</url>
