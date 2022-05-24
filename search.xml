@@ -8,7 +8,7 @@
       <link href="/2022/05/24/Mac%E7%BB%88%E7%AB%AF%E9%85%8D%E7%BD%AE/"/>
       <url>/2022/05/24/Mac%E7%BB%88%E7%AB%AF%E9%85%8D%E7%BD%AE/</url>
       
-        <content type="html"><![CDATA[<p>关于系统用户目录下的 .bash_profile 和 .zshrc文件</p><figure class="highlight shell"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><pre><code class="hljs shell">cd ~<br>//<br>vim .bash_profile<br><br>vim .zshrc<br></code></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<p>准备工作：需要用到代理设置软件 clashX ，Vim编辑器基本操作命令，http传输协议原理</p><p>关于系统用户目录下的 .bash_profile 和 .zshrc文件</p><figure class="highlight shell"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><pre><code class="hljs shell">cd ~<br>//<br>vim .bash_profile<br><br>vim .zshrc<br></code></pre></td></tr></table></figure>]]></content>
       
       
       
