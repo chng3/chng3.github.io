@@ -4,17 +4,29 @@
   
     
     <entry>
-      <title>Mac终端配置</title>
-      <link href="/2022/05/24/Mac%E7%BB%88%E7%AB%AF%E9%85%8D%E7%BD%AE/"/>
-      <url>/2022/05/24/Mac%E7%BB%88%E7%AB%AF%E9%85%8D%E7%BD%AE/</url>
+      <title>Mac 终端配置</title>
+      <link href="/2022/05/24/Mac%20%E7%BB%88%E7%AB%AF%E9%85%8D%E7%BD%AE/"/>
+      <url>/2022/05/24/Mac%20%E7%BB%88%E7%AB%AF%E9%85%8D%E7%BD%AE/</url>
       
         <content type="html"><![CDATA[<p>准备工作：需要用到代理设置软件 clashX ，Vim编辑器基本操作命令，http传输协议原理</p><p>关于系统用户目录下的 .bash_profile 和 .zshrc文件</p><figure class="highlight shell"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><pre><code class="hljs shell">cd ~<br>//<br>vim .bash_profile<br><br>vim .zshrc<br></code></pre></td></tr></table></figure>]]></content>
       
       
+      <categories>
+          
+          <category> 开发环境部署 </category>
+          
+      </categories>
+      
       
         <tags>
             
-            <tag> 终端 Terminal oh-my-zsh shell </tag>
+            <tag> 终端 </tag>
+            
+            <tag> Terminal </tag>
+            
+            <tag> oh-my-zsh </tag>
+            
+            <tag> shell </tag>
             
         </tags>
       
@@ -23,17 +35,25 @@
     
     
     <entry>
-      <title>Vim操纵速查表</title>
-      <link href="/2022/05/24/Vim%E6%93%8D%E7%BA%B5%E9%80%9F%E6%9F%A5%E8%A1%A8/"/>
-      <url>/2022/05/24/Vim%E6%93%8D%E7%BA%B5%E9%80%9F%E6%9F%A5%E8%A1%A8/</url>
+      <title>Vim 操纵速查表</title>
+      <link href="/2022/05/24/Vim%20%E6%93%8D%E4%BD%9C%E6%8C%87%E4%BB%A4%E9%80%9F%E6%9F%A5%E8%A1%A8/"/>
+      <url>/2022/05/24/Vim%20%E6%93%8D%E4%BD%9C%E6%8C%87%E4%BB%A4%E9%80%9F%E6%9F%A5%E8%A1%A8/</url>
       
-        <content type="html"><![CDATA[<table><thead><tr><th>快捷键</th><th>功能</th></tr></thead><tbody><tr><td><code>x</code></td><td>删除光标处字符</td></tr><tr><td><code>dd</code></td><td>删除一个词</td></tr><tr><td></td><td></td></tr><tr><td><code>yy</code></td><td>复制当前行至存储缓冲区</td></tr><tr><td><code>[&quot;x]yy</code></td><td>复制当前行至寄存器 x</td></tr><tr><td><code>p</code>（小写）</td><td>在当前行之后粘贴存储缓冲区中的内容</td></tr><tr><td><code>P</code>（大写）</td><td>在当前行之前粘贴存储缓冲区中的内容</td></tr><tr><td></td><td></td></tr><tr><td><code>/search_text</code></td><td>检索文档，在文档后面的部分搜索 search_text</td></tr><tr><td><code>?search_text</code></td><td>检索文档，在文档前面的部分搜索 search_text</td></tr><tr><td><code>n</code></td><td>移动到后一个检索结果</td></tr><tr><td><code>N</code></td><td>移动到前一个检索结果</td></tr><tr><td></td><td></td></tr><tr><td><code>u</code></td><td>撤销最后的操作</td></tr><tr><td><code>Ctrl + r</code></td><td>重做最后撤销的操作</td></tr><tr><td></td><td></td></tr><tr><td><code>dd</code></td><td>删除当前行</td></tr><tr><td><code>d0</code></td><td>删除到行首</td></tr><tr><td><code>d$</code></td><td>删除到行末</td></tr><tr><td></td><td></td></tr><tr><td><code>h</code></td><td>光标向左移动一个字符</td></tr><tr><td><code>j</code> 或 <code>Ctrl + J</code></td><td>光标向下移动一行</td></tr><tr><td><code>k</code> 或 <code>Ctrl + P</code></td><td>光标向上移动一行</td></tr><tr><td><code>l</code></td><td>光标向右移动一个字符</td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr></tbody></table>]]></content>
+        <content type="html"><![CDATA[<h2 id="普通模式下基本命令"><a href="#普通模式下基本命令" class="headerlink" title="普通模式下基本命令"></a>普通模式下基本命令</h2><table><thead><tr><th>快捷键</th><th>功能</th></tr></thead><tbody><tr><td><code>x</code></td><td>删除光标处字符</td></tr><tr><td><code>dd</code></td><td>删除一个词</td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td><code>/search_text</code></td><td>检索文档，在文档后面的部分搜索 search_text</td></tr><tr><td><code>?search_text</code></td><td>检索文档，在文档前面的部分搜索 search_text</td></tr><tr><td><code>n</code></td><td>移动到后一个检索结果</td></tr><tr><td><code>N</code></td><td>移动到前一个检索结果</td></tr><tr><td></td><td></td></tr><tr><td><code>u</code></td><td>撤销最后的操作</td></tr><tr><td><code>Ctrl + r</code></td><td>重做最后撤销的操作</td></tr><tr><td></td><td></td></tr><tr><td><code>dd</code></td><td>删除当前行</td></tr><tr><td><code>d0</code></td><td>删除到行首</td></tr><tr><td><code>d$</code></td><td>删除到行末</td></tr><tr><td></td><td></td></tr><tr><td><code>h</code></td><td>光标向左移动一个字符</td></tr><tr><td><code>j</code> 或 <code>Ctrl + J</code></td><td>光标向下移动一行</td></tr><tr><td><code>k</code> 或 <code>Ctrl + P</code></td><td>光标向上移动一行</td></tr><tr><td><code>l</code></td><td>光标向右移动一个字符</td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr></tbody></table><h2 id="进阶之复制和粘贴"><a href="#进阶之复制和粘贴" class="headerlink" title="进阶之复制和粘贴"></a>进阶之复制和粘贴</h2><table><thead><tr><th>快捷键</th><th>功能</th></tr></thead><tbody><tr><td><code>yy</code></td><td>复制当前行至存储缓冲区</td></tr><tr><td><code>[&quot;x]yy</code></td><td>复制当前行至寄存器 x</td></tr><tr><td><code>p</code>（小写）</td><td>在当前行之后粘贴存储缓冲区中的内容</td></tr><tr><td><code>P</code>（大写）</td><td>在当前行之前粘贴存储缓冲区中的内容</td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr></tbody></table>]]></content>
       
+      
+      <categories>
+          
+          <category> 编辑器 </category>
+          
+      </categories>
       
       
         <tags>
             
             <tag> Vim </tag>
+            
+            <tag> vi </tag>
             
         </tags>
       
