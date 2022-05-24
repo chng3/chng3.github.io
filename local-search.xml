@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>Mac终端配置</title>
+    <link href="/2022/05/24/Mac%E7%BB%88%E7%AB%AF%E9%85%8D%E7%BD%AE/"/>
+    <url>/2022/05/24/Mac%E7%BB%88%E7%AB%AF%E9%85%8D%E7%BD%AE/</url>
+    
+    <content type="html"><![CDATA[<p>关于系统用户目录下的 .bash_profile 和 .zshrc文件</p><figure class="highlight shell"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><pre><code class="hljs shell">cd ~<br>//<br>vim .bash_profile<br><br>vim .zshrc<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>终端 Terminal oh-my-zsh shell</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Vim操纵速查表</title>
     <link href="/2022/05/24/Vim%E6%93%8D%E7%BA%B5%E9%80%9F%E6%9F%A5%E8%A1%A8/"/>
     <url>/2022/05/24/Vim%E6%93%8D%E7%BA%B5%E9%80%9F%E6%9F%A5%E8%A1%A8/</url>
