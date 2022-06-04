@@ -18,19 +18,19 @@
   
     <meta name="description" content="查看在终端里输入ls就可以查看文件和文件夹，但隐藏的文件就无法查看，使用ls -a即可。 创建文件夹&#x2F;目录命令：mkdir使用说明：输入命令随后空格再输入目录名即可。案例：创建一个 test 文件夹&#x2F;目录则对应命令就是mkdir test 进入目录cd 命令进入目录比如要进入 test 目录则就是cd test 返回上一级目录命令：cd.. 创建文件命令: touch笔者感觉这">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mac下的常用终端（terminal）命令总结">
+<meta property="og:title" content="Mac 下的常用终端（terminal）命令总结">
 <meta property="og:url" content="https://dolphinchng.github.io/2022/03/06/Mac%E4%B8%8B%E7%9A%84%E5%B8%B8%E7%94%A8%E7%BB%88%E7%AB%AF%EF%BC%88terminal%EF%BC%89%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="Zhuang">
 <meta property="og:description" content="查看在终端里输入ls就可以查看文件和文件夹，但隐藏的文件就无法查看，使用ls -a即可。 创建文件夹&#x2F;目录命令：mkdir使用说明：输入命令随后空格再输入目录名即可。案例：创建一个 test 文件夹&#x2F;目录则对应命令就是mkdir test 进入目录cd 命令进入目录比如要进入 test 目录则就是cd test 返回上一级目录命令：cd.. 创建文件命令: touch笔者感觉这">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-03-05T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-05-30T15:36:37.204Z">
+<meta property="article:modified_time" content="2022-06-04T08:31:17.270Z">
 <meta property="article:author" content="Zhuang">
 <meta property="article:tag" content="terminal">
 <meta name="twitter:card" content="summary_large_image">
   
   
-  <title>Mac下的常用终端（terminal）命令总结 - Zhuang</title>
+  <title>Mac 下的常用终端（terminal）命令总结 - Zhuang</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -186,9 +186,9 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Mac下的常用终端（terminal）命令总结">
+            <span class="h2" id="subtitle" title="Mac 下的常用终端（terminal）命令总结">
               
-                Mac下的常用终端（terminal）命令总结
+                Mac 下的常用终端（terminal）命令总结
               
             </span>
 
@@ -209,7 +209,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.1k 字
+      1.4k 字
     </span>
   
 
@@ -218,7 +218,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      10 分钟
+      12 分钟
     </span>
   
 
@@ -255,11 +255,11 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Mac下的常用终端（terminal）命令总结</h1>
+            <h1 style="display: none">Mac 下的常用终端（terminal）命令总结</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：4 天前
+                  本文最后更新于：20 分钟前
                 
               </p>
             
@@ -270,8 +270,16 @@
 <h2 id="返回上一级目录"><a href="#返回上一级目录" class="headerlink" title="返回上一级目录"></a>返回上一级目录</h2><p>命令：<code>cd..</code></p>
 <h2 id="创建文件"><a href="#创建文件" class="headerlink" title="创建文件"></a>创建文件</h2><p>命令: <code>touch</code><br>笔者感觉这个命令还是挺靠谱的。Mac如果不用第三方工具（sublime等）是无法可视化创建一个txt文件。而用这个命令即可创建。<br>示例（创建一个test为名的 txt 文件）：<code>touch test.txt</code></p>
 <h2 id="拷贝"><a href="#拷贝" class="headerlink" title="拷贝"></a>拷贝</h2><p>命令：<code>cp</code><br>案例（拷贝一个 test.txt 文件并重新命名为test2.txt）：<code>cp test.txt test2.txt</code></p>
-<h2 id="重命名或者移动文件"><a href="#重命名或者移动文件" class="headerlink" title="重命名或者移动文件"></a>重命名或者移动文件</h2><p>命令:   <code>mv</code><br>比如  (将一个 mountain.c 的C文件名字改成mt.c )： <code>mv mountain.c mt.c</code></p>
+<h2 id="重命名或者移动文件"><a href="#重命名或者移动文件" class="headerlink" title="重命名或者移动文件"></a>重命名或者移动文件</h2><p>命令:   <code>mv</code><br>比如  (将一个 mountain.c  的 C 语言程序文件名字改成 mt.c )： <code>mv mountain.c mt.c</code></p>
 <p>或者将 mountain.c 文件剪切到 code 文件夹下：<code>mv mountain.c code/</code></p>
+<h3 id="批量修改文件名"><a href="#批量修改文件名" class="headerlink" title="批量修改文件名"></a>批量修改文件名</h3><p>例子：目录下有多个后缀为<code> .cpp</code> 的文件，我想让它们全部保留文件名的情况下修改成<code> .c</code> 后缀，这时可以结合 mv 命令和 shell 编程写个 for 循环，遍历每个文件然后依次更改。命令如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> *.cpp;<span class="hljs-keyword">do</span> <span class="hljs-built_in">mv</span> <span class="hljs-string">&quot;<span class="hljs-variable">$i</span>&quot;</span> <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;i%.cpp&#125;</span>.c&quot;</span>;<span class="hljs-keyword">done</span></span><br></code></pre></td></tr></table></figure>
+
+<p>模版：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">// 把 xxx 换成要修改的文件名的后缀，yyy 换成替换输出的后缀即可。<br><span class="hljs-meta prompt_">$ </span><span class="language-bash"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> *.xxx;<span class="hljs-keyword">do</span> <span class="hljs-built_in">mv</span> <span class="hljs-string">&quot;<span class="hljs-variable">$i</span>&quot;</span> <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;i%.xxx&#125;</span>.yyy&quot;</span>;<span class="hljs-keyword">done</span></span><br></code></pre></td></tr></table></figure>
+
+
+
 <h2 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h2><p>命令：<code>find</code><br>案例（查找当前目录下所有的 txt 文件）：<code>find *.txt</code></p>
 <h2 id="显示当前的目录"><a href="#显示当前的目录" class="headerlink" title="显示当前的目录"></a>显示当前的目录</h2><p>命令：<code>pwd</code></p>
 <h2 id="打开成可视化的文件夹"><a href="#打开成可视化的文件夹" class="headerlink" title="打开成可视化的文件夹"></a>打开成可视化的文件夹</h2><p>命令：<code>open</code><br>说明：如果是 <code>open</code>,则是打开当前命令里的目录，如果要打开指定的文件夹或者文件则格式为open要打开的路径即可。</p>
