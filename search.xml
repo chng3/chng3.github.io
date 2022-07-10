@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>Java 笔记</title>
-      <link href="/2022/07/05/Java-%E7%AC%94%E8%AE%B0/"/>
-      <url>/2022/07/05/Java-%E7%AC%94%E8%AE%B0/</url>
-      
-        <content type="html"><![CDATA[<p>先看别人的：）</p><p><a href="https://yltang.cn/archives/java-note/">java 笔记</a></p><h3 id="JRE-和-JDK"><a href="#JRE-和-JDK" class="headerlink" title="JRE 和 JDK"></a>JRE 和 JDK</h3><ul><li>JRE：Java 程序的运行时环境，包含 JVM 和运行时所需要的核心类库 。</li><li>JDK：Java 程序开发工具包，包含 JRE 和开发人员使用的工具。</li></ul><h3 id="编译和运行"><a href="#编译和运行" class="headerlink" title="编译和运行"></a>编译和运行</h3><ul><li>编译：指将编写的 Java 源文件翻译成 JVM 能认识的 class 字节码文件，javac 编译器会检查程序中是否有错，有错误就会提示，无错误则编译成功。</li><li>运行：指将 class 文件 交给 JVM 运行。</li></ul><h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><table><thead><tr><th align="left">数据类型</th><th align="left">关键字</th><th align="left">内存占用</th><th align="left">取值范围</th></tr></thead><tbody><tr><td align="left">字节型</td><td align="left">byte</td><td align="left">1个字节</td><td align="left">-128~127</td></tr><tr><td align="left">短整型</td><td align="left">short</td><td align="left">2个字节</td><td align="left">-32768~32767</td></tr><tr><td align="left">整型</td><td align="left">int（默认）</td><td align="left">4个字节</td><td align="left">-2的31次方~2的31次方-1</td></tr><tr><td align="left">长整型</td><td align="left">long</td><td align="left">8个字节</td><td align="left">-2的63次方~2的63次方-1</td></tr><tr><td align="left">单精度浮点数</td><td align="left">float</td><td align="left">4个字节</td><td align="left">-3.4028E+38~3.4028E+38</td></tr><tr><td align="left">双精度浮点数</td><td align="left">double（默认）</td><td align="left">8个字节</td><td align="left">-1.7977E+308~1.7977E+308</td></tr><tr><td align="left">字符型</td><td align="left">char</td><td align="left">2个字节</td><td align="left">0~65535</td></tr><tr><td align="left">布尔型</td><td align="left">boolean</td><td align="left">1个字节</td><td align="left">true，false</td></tr></tbody></table><h3 id="引用数据类型"><a href="#引用数据类型" class="headerlink" title="引用数据类型"></a>引用数据类型</h3><p>除了八种基本数据类型，其他全都是引用数据类型，如 String。</p><h3 id="数据类型转换"><a href="#数据类型转换" class="headerlink" title="数据类型转换"></a>数据类型转换</h3><ol><li>自动转换：从小到大，byte-short-char–&gt;int–&gt;long–&gt;float–&gt;double</li><li>强制转换：从大到小，浮点到整数可能会发生精度损失，int 转 short 可能会发生数据溢出（丢失）</li></ol><p>格式：<code>数据类型 变量名 = (数据类型) 被转数据值;</code></p><h3 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h3><h3 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h3><h4 id="接口可以用来干嘛"><a href="#接口可以用来干嘛" class="headerlink" title="接口可以用来干嘛?"></a>接口可以用来干嘛?</h4><p>Java中类不支持多继承，只支持单继承（即一个类只有一个父类）。 但是java中的接口可以间接实现多继承，，即一个子接口可以有多个父接口。 （<strong>接口的作用是用来扩展对象的功能，一个子接口继承多个父接口，说明子接口扩展了多个功能，当类实现接口时，类就扩展了相应的功能</strong>）。</p><h4 id="接口与抽象类的区别？"><a href="#接口与抽象类的区别？" class="headerlink" title="接口与抽象类的区别？"></a>接口与抽象类的区别？</h4><p>（1）接口只有定义，不能有方法的实现，java 1.8中可以定义default方法体，而抽象类可以有定义与实现，方法可在抽象类中实现。 （2）实现接口的关键字为implements，继承抽象类的关键字为extends。 一个类可以实现多个接口，但一个类只能继承一个抽象类。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 编程语言 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Java </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>学好JavaScript的好处</title>
       <link href="/2022/07/01/%E5%AD%A6%E5%A5%BDJavaScript%E7%9A%84%E5%A5%BD%E5%A4%84/"/>
       <url>/2022/07/01/%E5%AD%A6%E5%A5%BDJavaScript%E7%9A%84%E5%A5%BD%E5%A4%84/</url>
