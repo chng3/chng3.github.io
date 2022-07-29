@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title> Image Guess </title>
+    <style>
+        body {margin: 20px;}
+        img {
+            margin: 20px;
+        }
+        div {
+            margin: 10px;
+        }
+    </style>
+    <script>
+        // window.onload = init;
+        function init(){
+            let images = document.getElementsByTagName("img");
+            for(let i=0; i < images.length; i++){
+                // 同时监听鼠标点击和鼠标覆盖 触发showAnswer事件
+                images[i].onclick = showAnswer;
+                images[i].onmouseover = showAnswer;
+
+            }
+        }
+
+        function showAnswer(eventObj){
+            let image = eventObj.target;
+            let name = image.id;
+            name = name + ".jpg";
+            image.src = "https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/" + name;
+            setTimeout(reblur, 2000, image);
+
+        }
+        
+        function reblur(image) {
+            let name = image.id;
+            name = "blur" + name +".jpg";
+            image.src = "https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/" + name;
+        }
+
+    </script>
+</head>
+<body>
+<!--<p id="messages">这是蒙娜丽莎的模糊图像。您可以用鼠标左键单击然后看看会发生什么！</p>-->
+<div>
+<img id="1" src="https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/blur1.jpg" title="这是一张守门员图像">
+</div>
+<div>
+<img id="2" src="https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/blur2.jpg" alt="">
+</div>
+<div>
+<img id="3" src="https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/blur3.jpg" alt="">
+</div>
+
+</body>
+<script>
+    window.onload = init;
+</script>
+</html>
