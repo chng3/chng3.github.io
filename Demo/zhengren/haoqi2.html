@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer" />
+    <!--引入 在线jquery 库 -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+    <title>Document</title>
+    <style>
+        body {
+            /* 整体元素居中显示 */
+            margin: 0 auto;
+            /* 设置网页画布大小 */
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    当 BuleMoon 守门员在认真比赛时：
+    <button id="btn" onclick="fun()">点我查看视频</button><br><br>
+    <div id="vContent" style="display: none;">
+        <!-- 视频宽度大小与body宽度相同，实现网页居中显示 -->
+        <video controls autoplay width="500">
+            <source id="source" type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+
+</body>
+<script>
+    let div = document.getElementById("vContent");
+    let video = document.getElementById("source");
+    let str = atob("aHR0cHM6Ly91c2VyLWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vMzY2OTc2NjMvMTgzMjg5MDQzLWU1NjYwZGU1LTg2YmItNDM3NS04Y2Y3LTRjOWQ5NGVkZWRkOS5tcDQ=");
+    video.src = str;
+    function fun() {
+        pwd = prompt("请先输入密码进行查看！")
+        if ('MTEx' === btoa(pwd)) {
+            div.style.display = "block";    // 显示
+        } else {
+            alert("密码错误,请联系东软学号21215150219同学！")
+        }
+
+    }
+</script>
+
+</html>
