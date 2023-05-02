@@ -16,21 +16,22 @@
   <meta name="author" content="Zhuang">
   <meta name="keywords" content="hexo">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="&#x2F;&#x2F;todo: 编写 参见 proxychains 相关 macos 给 git(github) 设置代理（http&#x2F;ssh） git clone 一个 github 上的仓库，太慢，经常连接失败，但是 github 官网流畅访问，为什么？ - 汪小九的回答 - 知乎 stackoverflow">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://dolphinchng.github.io/2020/02/22/hello-world/index.html">
+<meta property="og:title" content="终端之为 Git 设置代理">
+<meta property="og:url" content="https://dolphinchng.github.io/2020/05/02/%E7%BB%88%E7%AB%AF%E4%B9%8B%E4%B8%BA-Git-%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/index.html">
 <meta property="og:site_name" content="Zhuang">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="&#x2F;&#x2F;todo: 编写 参见 proxychains 相关 macos 给 git(github) 设置代理（http&#x2F;ssh） git clone 一个 github 上的仓库，太慢，经常连接失败，但是 github 官网流畅访问，为什么？ - 汪小九的回答 - 知乎 stackoverflow">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-02-21T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-04-08T05:10:55.137Z">
+<meta property="article:published_time" content="2020-05-02T09:30:06.000Z">
+<meta property="article:modified_time" content="2023-05-02T09:36:31.407Z">
 <meta property="article:author" content="Zhuang">
-<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="git">
+<meta property="article:tag" content="Terminal">
 <meta name="twitter:card" content="summary_large_image">
   
   
-  <title>Hello World - Zhuang</title>
+  <title>终端之为 Git 设置代理 - Zhuang</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -186,9 +187,9 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Hello World">
+            <span class="h2" id="subtitle" title="终端之为 Git 设置代理">
               
-                Hello World
+                终端之为 Git 设置代理
               
             </span>
 
@@ -198,8 +199,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2020-02-22 00:00" pubdate>
-        2020年2月22日 凌晨
+      <time datetime="2020-05-02 17:30" pubdate>
+        2020年5月2日 下午
       </time>
     </span>
   
@@ -209,7 +210,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      367 字
+      143 字
     </span>
   
 
@@ -218,7 +219,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      4 分钟
+      2 分钟
     </span>
   
 
@@ -255,34 +256,37 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Hello World</h1>
+            <h1 style="display: none">终端之为 Git 设置代理</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：24 天前
+                  本文最后更新于：几秒前
                 
               </p>
             
             <div class="markdown-body">
-              <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/deployment.html">Deployment</a></p>
+              <p>&#x2F;&#x2F;todo: 编写</p>
+<h2 id="参见"><a href="#参见" class="headerlink" title="参见"></a>参见</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://segmentfault.com/q/1010000000118837">proxychains 相关</a></li>
+<li><a target="_blank" rel="noopener" href="https://gist.github.com/chuyik/02d0d37a49edc162546441092efae6a1">macos 给 git(github) 设置代理（http&#x2F;ssh）</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/27159393/answer/141047266">git clone 一个 github 上的仓库，太慢，经常连接失败，但是 github 官网流畅访问，为什么？ - 汪小九的回答 - 知乎</a></li>
+<li><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/5860888/git-through-proxy">stackoverflow</a></li>
+</ol>
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/git/">git</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Terminal/">Terminal</a>
+                    
+                  </div>
                 
               </div>
               
@@ -297,9 +301,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/02/23/Mac%20%E7%BB%88%E7%AB%AF%E9%85%8D%E7%BD%AE/">
+                      <a href="/2020/05/04/TS%E4%B9%8B%E7%B1%BB%E5%9E%8B%E5%A3%B0%E6%98%8E/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">mac 终端配置</span>
+                        <span class="hidden-mobile">TS 之类型声明</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -307,11 +311,46 @@
                   <article class="post-next col-6">
                     
                     
+                      <a href="/2020/04/20/HTML5-%E4%B9%8BSVG/">
+                        <span class="hidden-mobile">HTML5 之SVG</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
                   </article>
                 </div>
               
             </div>
 
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.4.16/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"O9zw8xuALFTuc5q6gYA1Eic7-gzGzoHsz","appKey":"v1jacR0AwRCXxl6bYVqIdx85","path":"window.location.pathname","placeholder":"Just go go","avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":true,"recordIP":true,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          Fluid.plugins.initFancyBox('#valine .vcontent img:not(.vemoji)');
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
             
           </article>
         </div>
