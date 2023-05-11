@@ -18,19 +18,19 @@
   
     <meta name="description" content="基础使用一、新建代码库12345678# 在当前目录新建一个Git代码库$ git init# 新建一个目录，将其初始化为Git代码库$ git init [project-name]# 下载一个项目和它的整个代码历史$ git clone [url]  二、配置Git的设置文件为 .gitconfig 它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。 1234567891011">
 <meta property="og:type" content="article">
-<meta property="og:title" content="汇总常用 Git 指令及用法">
+<meta property="og:title" content="收集常用 Git 指令及用法">
 <meta property="og:url" content="https://dolphinchng.github.io/2020/02/26/%E6%B1%87%E6%80%BB%E5%B8%B8%E7%94%A8Git%E6%8C%87%E4%BB%A4%E5%8F%8A%E7%94%A8%E6%B3%95/index.html">
 <meta property="og:site_name" content="Zhuang">
 <meta property="og:description" content="基础使用一、新建代码库12345678# 在当前目录新建一个Git代码库$ git init# 新建一个目录，将其初始化为Git代码库$ git init [project-name]# 下载一个项目和它的整个代码历史$ git clone [url]  二、配置Git的设置文件为 .gitconfig 它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。 1234567891011">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-25T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-05-02T09:20:16.212Z">
+<meta property="article:modified_time" content="2023-05-02T09:41:16.493Z">
 <meta property="article:author" content="Zhuang">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary_large_image">
   
   
-  <title>汇总常用 Git 指令及用法 - Zhuang</title>
+  <title>收集常用 Git 指令及用法 - Zhuang</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -186,9 +186,9 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="汇总常用 Git 指令及用法">
+            <span class="h2" id="subtitle" title="收集常用 Git 指令及用法">
               
-                汇总常用 Git 指令及用法
+                收集常用 Git 指令及用法
               
             </span>
 
@@ -218,7 +218,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      21 分钟
+      22 分钟
     </span>
   
 
@@ -255,11 +255,11 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">汇总常用 Git 指令及用法</h1>
+            <h1 style="display: none">收集常用 Git 指令及用法</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：16 分钟前
+                  本文最后更新于：9 天前
                 
               </p>
             
@@ -279,7 +279,8 @@
 
 <h2 id="七、查看信息"><a href="#七、查看信息" class="headerlink" title="七、查看信息"></a>七、查看信息</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">显示有变更的文件</span><br><span class="hljs-meta prompt_">$ </span><span class="language-bash">git status</span><br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">显示当前分支的版本历史</span><br><span class="hljs-meta prompt_">$ </span><span class="language-bash">git <span class="hljs-built_in">log</span></span><br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">显示commit历史，以及每次commit发生变更的文件</span><br><span class="hljs-meta prompt_">$ </span><span class="language-bash">git <span class="hljs-built_in">log</span> --<span class="hljs-built_in">stat</span></span><br></code></pre></td></tr></table></figure>
 <h1 id="补充扩展"><a href="#补充扩展" class="headerlink" title="补充扩展"></a>补充扩展</h1><h2 id="快速开启一个新项目"><a href="#快速开启一个新项目" class="headerlink" title="快速开启一个新项目"></a>快速开启一个新项目</h2><p>使用<code>degit</code>命令，这个命令跟<code>git clone</code>很相似，区别在于下载一个<code>repo</code>的时候是不带整个项目的<code>commit</code>信息。</p>
-<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs crystal"><span class="hljs-comment"># 下载一个项目但不带它的整个代码历史</span><br><span class="hljs-variable">$ </span>degit [url]<br></code></pre></td></tr></table></figure>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cmake"><span class="hljs-number">1</span> <span class="hljs-comment"># 安装 degit</span><br>npm <span class="hljs-keyword">install</span> -g degit<br></code></pre></td></tr></table></figure>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs crystal"><span class="hljs-number">2</span> <span class="hljs-comment"># 下载一个项目但不带它的整个代码历史</span><br><span class="hljs-variable">$ </span>degit [url]<br></code></pre></td></tr></table></figure>
 
 
             </div>
