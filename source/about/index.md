@@ -1,6 +1,7 @@
 ---
-title: about
-date: 2018-12-05 20:54:34
+title: 关于我
+layout: about
 ---
 
 > 做个俗人，贪财好色
+

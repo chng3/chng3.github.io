@@ -1,7 +1,11 @@
 ---
-date: 2018-12-05 13:24:08
-tags: git 
-title: Github基础使用
+title: 将本地项目上传到 GitHub 托管
+date: 2020-02-26 19:23:10
+updated:
+tags: git
+categories: 技术
+hide:
+comment:
 ---
 
 # Github基础使用
@@ -12,31 +16,27 @@ title: Github基础使用
 
 要先确保操作系统已经安装了**Git**，之后进入本地仓库的根目录，鼠标右键选择`Git Bash Here`，接着输入以下命令：
 
-```
+```shell
 git init
 ```
-
-
-
 出现以下回应且在根目录下生成了一个隐藏的文件夹`.git`
-![](http://ww1.sinaimg.cn/large/bf4c214dgy1fxw9t5xfwhj20fq01it8l.jpg)
-![](http://ww1.sinaimg.cn/large/bf4c214dgy1fxw9w20hk0j20gq01umx3.jpg)
-之后，此时仓库里的文件还没有被追踪，输入
+![hHrssB](https://cdn.jsdelivr.net/gh/dolphinchng/MyPic@master/uPic/hHrssB.png)
+此时，如图所示它是将`master`作为初始分支的名称，这里为了跟之后在 github 上默认创建的分支名一致，可以改名为`main`，输入
+
+```
+git branch -m "main"
+```
+
+此时仓库里的文件还没有被追踪，输入
 
 ```
 git add . //将仓库里的所有文件进行追踪
 ```
-
-![](http://ww1.sinaimg.cn/large/bf4c214dgy1fxw9wvos9rj20e4026gls.jpg)
-执行提交，拍摄快照
-
+提交一次快照，输入
 ```
 git commit -m "Started Course"	//" "里可以自定义快照的名字
 ```
 
-
-
-![](http://ww1.sinaimg.cn/large/bf4c214dgy1fxw9xsqb8wj20fi05jwf8.jpg)
 
 ### 在GitHub上创建一个项目
 
@@ -65,7 +65,7 @@ git remote add origin
 
 ### 向远程仓库提交代码
 
-第一次向远程提交代码时得先将远程的README.md 文件同步过来，实行一下代码。
+第一次向远程提交代码时得先将远程的README.md 文件(如果有)同步过来，实行一下代码。
 
 ```
 $ git pull --rebase origin master
@@ -82,7 +82,7 @@ $ git pull --rebase origin master
 接着，将进行第一次向远程同步本地仓库的内容，输入：
 
 ```
-git push origin master
+git push origin main
 ```
 
 ![](http://ww1.sinaimg.cn/large/bf4c214dgy1fxwa1pgcvpj20dj0400t6.jpg)
